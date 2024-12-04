@@ -1,0 +1,10 @@
+*** draft ***
+// here will be stored the formulas to be further designed graphically
+
+FORMULAS: 
+
+Electricity and electronics:
+  Ohms Law
+  U = IR
+  
+
