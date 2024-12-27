@@ -1,0 +1,138 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+\title{\textbf{Advanced Kinematics}}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Kinematics is the branch of mechanics that deals with the motion of objects without considering the forces that cause the motion. This document covers advanced kinematic concepts, drawing heavily from the content of Resnick and Halliday's textbook.
+
+\section{Basic Definitions and Equations}
+
+\subsection{Displacement}
+Displacement is the vector quantity that defines the change in position of an object:
+\[
+\vec{s} = \vec{r}_f - \vec{r}_i,
+\]
+where \(\vec{r}_f\) is the final position vector and \(\vec{r}_i\) is the initial position vector.
+
+\subsection{Velocity}
+\begin{itemize}
+    \item \textbf{Average Velocity:}
+    \[
+    \vec{v}_{\text{avg}} = \frac{\Delta \vec{s}}{\Delta t}
+    \]
+    \item \textbf{Instantaneous Velocity:}
+    \[
+    \vec{v} = \lim_{\Delta t \to 0} \frac{\Delta \vec{s}}{\Delta t} = \frac{d\vec{s}}{dt}
+    \]
+\end{itemize}
+
+\subsection{Acceleration}
+\begin{itemize}
+    \item \textbf{Average Acceleration:}
+    \[
+    \vec{a}_{\text{avg}} = \frac{\Delta \vec{v}}{\Delta t}
+    \]
+    \item \textbf{Instantaneous Acceleration:}
+    \[
+    \vec{a} = \frac{d\vec{v}}{dt} = \frac{d^2\vec{s}}{dt^2}
+    \]
+\end{itemize}
+
+\section{Equations of Motion (Constant Acceleration)}
+For motion with constant acceleration, the following equations apply:
+\begin{align*}
+    \vec{v} &= \vec{v}_0 + \vec{a}t, \\
+    \vec{s} &= \vec{v}_0t + \frac{1}{2}\vec{a}t^2, \\
+    \vec{v}^2 &= \vec{v}_0^2 + 2\vec{a}\cdot\vec{s}, \\
+    \vec{s} &= \frac{\vec{v} + \vec{v}_0}{2}t.
+\end{align*}
+
+\section{Projectile Motion}
+Projectile motion is the motion of an object under the influence of gravity, assuming no air resistance.
+
+\subsection{Key Equations}
+\begin{itemize}
+    \item Horizontal motion:
+    \[
+    x(t) = v_0 \cos\theta \cdot t
+    \]
+    \item Vertical motion:
+    \[
+    y(t) = v_0 \sin\theta \cdot t - \frac{1}{2}gt^2
+    \]
+    \item Time of flight:
+    \[
+    T = \frac{2v_0 \sin\theta}{g}
+    \]
+    \item Maximum height:
+    \[
+    H = \frac{v_0^2 \sin^2\theta}{2g}
+    \]
+    \item Range:
+    \[
+    R = \frac{v_0^2 \sin(2\theta)}{g}
+    \]
+\end{itemize}
+
+\section{Relative Motion}
+The relative velocity of an object \(A\) with respect to another object \(B\) is given by:
+\[
+\vec{v}_{AB} = \vec{v}_A - \vec{v}_B
+\]
+
+\section{Uniform Circular Motion}
+Uniform circular motion occurs when an object moves in a circle with constant speed.
+\begin{itemize}
+    \item Centripetal acceleration:
+    \[
+    a_c = \frac{v^2}{r}
+    \]
+    \item Angular velocity:
+    \[
+    \omega = \frac{\Delta \theta}{\Delta t}
+    \]
+    \item Relationship between linear and angular velocity:
+    \[
+    v = \omega r
+    \]
+\end{itemize}
+
+\section{Kinematics in Two Dimensions}
+Motion in two dimensions can be represented by breaking it into components along the \(x\)- and \(y\)-axes:
+\begin{itemize}
+    \item Position vector:
+    \[
+    \vec{r} = x\hat{i} + y\hat{j}
+    \]
+    \item Velocity vector:
+    \[
+    \vec{v} = \frac{dx}{dt}\hat{i} + \frac{dy}{dt}\hat{j}
+    \]
+    \item Acceleration vector:
+    \[
+    \vec{a} = \frac{d^2x}{dt^2}\hat{i} + \frac{d^2y}{dt^2}\hat{j}
+    \]
+\end{itemize}
+
+\section*{Conclusion}
+This document provides a comprehensive overview of advanced kinematics, including key equations and concepts from Resnick and Halliday. Understanding these principles is essential for analyzing motion in various physical systems.
+
+\end{document}
